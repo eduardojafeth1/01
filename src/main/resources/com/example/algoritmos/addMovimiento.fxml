@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.algoritmos.addController">
+   <children>
+      <ChoiceBox fx:id="tipo" prefWidth="150.0" />
+      <ChoiceBox fx:id="categoria" prefWidth="150.0" />
+      <TextField fx:id="amount" promptText="monto" />
+      <TextArea fx:id="descripcion" prefHeight="200.0" prefWidth="200.0" promptText="Descricion" />
+      <Button mnemonicParsing="false" onAction="#Registrar" text="Registrar" />
+   </children>
+</VBox>

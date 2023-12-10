@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="435.0" prefWidth="341.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.algoritmos.creditsController">
+   <children>
+      <Label text="Proyecto de Algoritmos y estruturas de datos" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label text="Integrantes">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+      <Label text="Eduardo Jafeth Maradiaga Canales 201911002788" />
+      <Label text="Rroselin Mariel Ponce Zuniga" />
+      <Label text="Jesseer Aziel Amaya Ortiz" />
+      <Label text="catedratico">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin></Label>
+      <Label text="Ing.Jose Enrique Avila" />
+      <Button fx:id="b" mnemonicParsing="false" onAction="#back" text="regresar">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>

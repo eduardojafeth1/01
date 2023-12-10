@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.algoritmos.editController">
+   <children>
+      <HBox prefHeight="39.0" prefWidth="600.0">
+         <children>
+            <Label text="id" />
+            <TextField fx:id="id">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></TextField>
+            <Button mnemonicParsing="false" onAction="#Cargar" text="buscar">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin></Button>
+         </children>
+      </HBox>
+      <ChoiceBox fx:id="tipo" prefWidth="150.0" accessibleText="tipo" />
+      <ChoiceBox fx:id="categoria" prefWidth="150.0" />
+      <TextField fx:id="amount" promptText="monto" />
+      <TextArea fx:id="descripcion" prefHeight="200.0" prefWidth="200.0" promptText="Descricion" />
+      <Button mnemonicParsing="false" onAction="#Registrar" text="Registrar" />
+   </children>
+</VBox>

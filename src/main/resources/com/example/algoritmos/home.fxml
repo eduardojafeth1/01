@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="504.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.algoritmos.homeController">
+   <top>
+
+   </top>
+    <center>
+        <VBox prefHeight="568.0" prefWidth="413.0">
+            <Label>Filtrar Por:</Label>
+            <HBox style="-fx-border-width: 100;">
+                <VBox>
+                    <Label>Categoria</Label>
+               <ChoiceBox fx:id="categoriafilter" prefWidth="150.0" />
+               <Button mnemonicParsing="false" onAction="#filter" text="filtrar" />
+
+                </VBox>
+            </HBox>
+            <VBox fx:id="vBox1" style="-fx-border-color: gray;" />
+        </VBox>
+   </center>
+    <left><VBox prefHeight="533.0" prefWidth="133.0">
+        <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#charge" text="Cargar" VBox.vgrow="ALWAYS" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#edit" text="Editar" VBox.vgrow="ALWAYS" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#borrar" text="Borrar" VBox.vgrow="ALWAYS" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#anadir" text="añadir" VBox.vgrow="ALWAYS" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#credits" text="credits" VBox.vgrow="ALWAYS" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#report" text="Generar reporte" VBox.vgrow="ALWAYS" />
+        </children></VBox></left>
+   <bottom>
+      <Label fx:id="saldo" style="-fx-border-color: gray;" text="Saldo" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
